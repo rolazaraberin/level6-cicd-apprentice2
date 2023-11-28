@@ -41,7 +41,7 @@
     "typeorm-rollback": "npm run typeorm migration:revert --dataSource data-source.ts",
     "jest-test": "jest",
     "jest-watch": "jest --watchAll",
-    "github-push": "git push github main",
+    "github-push": "git push github staging",
     "github-add": "git remote add github",
     "github-logout": "npm run github-info && git credential reject",
     "github-login": "npm run github-info && git credential fill",
