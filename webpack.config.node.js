@@ -174,7 +174,7 @@ function getPluginsOptions() {
 function getOutputOptions() {
   //INFO - https://webpack.js.org/concepts/output
   const outputOptions = {
-    path: path.resolve(__dirname, "./dist/src"), //PLACE WEBPACK FILES IN THIS DIRECTORY
+    path: path.resolve(__dirname, "./dist"), //PLACE WEBPACK FILES IN THIS DIRECTORY
   };
   return outputOptions;
 }
