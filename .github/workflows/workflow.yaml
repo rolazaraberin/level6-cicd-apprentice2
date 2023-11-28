@@ -17,9 +17,10 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-          echo "🖥️ The workflow is now ready to test your code on the runner."
           npm install
-          # npm run compile
+          echo "🖥️ The workflow is now ready to test your code on the runner."
+      - name: Test code
+        run: |
           npm test
           echo "🍏 This job's status is ${{ job.status }}."
   Build:
@@ -28,16 +29,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          # curl https://api.render.com/deploy/srv-clhcqbl8td7s73bnp5e0?key=c-UaL7hyNns
-          # npm install
-          # npm run build
-          echo Skipping BUILD...
+          npm install
+          npm run build
       - name: Output downloadable build
         uses: actions/upload-artifact@v3
         with:
-          name: build
-          path: build/
+          name: dist
+          path: dist/
       - run: |
           echo "🍏 This job's status is ${{ job.status }}."
           echo "The build is now ready for download from the Artifacts section"
-          echo "Simulating a new push"
