@@ -1,6 +1,6 @@
 import express from "express";
 import root from "./root";
-import test from "./test";
+// import test from "./test";
 import api from "./api";
 import enpoints from "./endpoints";
 
