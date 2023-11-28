@@ -1,12 +1,6 @@
 {
   "name": "typescript-server",
   "version": "1.0.0",
-  "description": "",
-  "main": "build/src/index.js",
-  "mainHTML": "dist/index.html",
-  "engines": {
-    "node": "18.14.0"
-  },
   "scripts": {
     "start": "npm run prod-start",
     "build": "npm run prod-build",
