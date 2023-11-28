@@ -49,5 +49,5 @@ jobs:
           git config --global user.name 'Rolazar'
           git config --global user.email 'rolazaraberin@gmail.com'
           git add --all
-          git commit -message "New dist"
+          git commit --message "New dist"
           git push
