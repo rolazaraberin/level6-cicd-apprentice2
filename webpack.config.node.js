@@ -22,7 +22,7 @@ module.exports = {
 function getEntryOptions() {
   //INFO - https://webpack.js.org/configuration/entry-context/#entry
   const entryOptions = {
-    index: "./build/src/index", //THE EXTENSION IS CHOSEN BY THE RESOLVE OPTION
+    index: "./build/src/expressApp", //THE EXTENSION IS CHOSEN BY THE RESOLVE OPTION
   };
   return entryOptions;
 }
