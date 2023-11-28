@@ -154,11 +154,12 @@ function getPluginsOptions() {
 
   //DYNAMICALLY INJECT JAVASCRIPT INTO HTML DOM HEAD
   //INFO - https://webpack.js.org/plugins/html-webpack-plugin
-  const htmlWebpackPluginOptions = {
-    template: "./src/index.html", //USE THIS FILE INSTEAD OF AN EMPTY HTML
-    //filename: "index.html", //OVERRIDE DEFAULT FILENAME INDEX.HTML
-  };
-  pluginsOptions.push(new HtmlWebpackPlugin(htmlWebpackPluginOptions));
+  //NOT NEEDED FOR BACKEND NODE APPLICATIONS
+  // const htmlWebpackPluginOptions = {
+  //   template: "./src/index.html", //USE THIS FILE INSTEAD OF AN EMPTY HTML
+  //   //filename: "index.html", //OVERRIDE DEFAULT FILENAME INDEX.HTML
+  // };
+  // pluginsOptions.push(new HtmlWebpackPlugin(htmlWebpackPluginOptions));
 
   //DYNAMICALLY INJECT CSS FILE INTO HTML DOM HEAD
   //INFO - https://webpack.js.org/plugins/mini-css-extract-plugin
