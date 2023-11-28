@@ -1,6 +1,9 @@
 {
-  "name": "typescript-server",
+  "name": "level6-cicd-apprentice-2",
   "version": "1.0.0",
+  "engines": {
+    "node": "18.14.0"
+  },
   "scripts": {
     "start": "npm run prod-start",
     "build": "npm run prod-build",
