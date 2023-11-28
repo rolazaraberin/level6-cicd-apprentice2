@@ -53,3 +53,4 @@ jobs:
           git add --all
           git commit --message "New dist"
           git push
+        continue-on-error: true
