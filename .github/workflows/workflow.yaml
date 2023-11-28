@@ -28,9 +28,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          curl https://api.render.com/deploy/srv-clhcqbl8td7s73bnp5e0?key=c-UaL7hyNns
+          # curl https://api.render.com/deploy/srv-clhcqbl8td7s73bnp5e0?key=c-UaL7hyNns
           # npm install
           # npm run build
+          echo Skipping BUILD...
       - name: Output downloadable build
         uses: actions/upload-artifact@v3
         with:
