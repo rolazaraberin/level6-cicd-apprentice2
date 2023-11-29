@@ -3,13 +3,9 @@
 1. Commit git changes
 2. `npm run deploy`
 
-## Environment Variables
+## Engines
 
-1. Instead of copying .env to git, set the variables in Heroku.
-2. In Heroku, go to `app` => `Settings` tab => click `Reveal Config Vars`
-3. Set keys and values
-   - Use the same keys in `.env`
-   - NOTE: Do not put quotes around values
+The `engines` property is required in `package.json` for Render.com
 
 ## CORS
 
