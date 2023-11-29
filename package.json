@@ -17,7 +17,7 @@
     "dist-build": "npm run webpack-build",
     "prod-start": "node ./dist/index.js",
     "prod-build": "",
-    "prod-test": "jest --config jest.config.production.ts",
+    "prod-test": "jest --config jest.config.production.ts --runInBand --detectOpenHandles",
     "express-server": "nodemon ./src/expressApp.ts",
     "knex-migration": "knex migrate:latest --env mysql",
     "knex-migration-create": "knex migrate:make my-migration -x ts",
