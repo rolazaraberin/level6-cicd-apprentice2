@@ -49,6 +49,7 @@ coverage
 src/utils/
 link-modules.bat
 *.code-workspace
+./src
 # .gitignore
 
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
